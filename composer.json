@@ -1,0 +1,22 @@
+{
+    "name": "hanafalah/module-appointment",
+    "description": "module appointment",
+    "type": "package",
+    "require": {
+        "hanafalah/laravel-support": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hanafalah\\ModuleAppointment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hamzah Nur Al Falah",
+            "email": "hamzahnafalah@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
