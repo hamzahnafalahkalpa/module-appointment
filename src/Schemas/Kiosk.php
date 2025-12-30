@@ -5,7 +5,7 @@ namespace Hanafalah\ModuleAppointment\Schemas;
 use Illuminate\Database\Eloquent\Model;
 use Hanafalah\ModuleAppointment\Contracts\Schemas\Kiosk as ContractsKiosk;
 use Hanafalah\ModuleAppointment\Contracts\Data\KioskData;
-use Hanafalah\ModuleItem\Models\InventoryItem;
+use Hanafalah\ModuleItem\Schemas\InventoryItem;
 
 class Kiosk extends InventoryItem implements ContractsKiosk
 {
