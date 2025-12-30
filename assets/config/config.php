@@ -30,4 +30,6 @@ return [
     'commands'  => [
         // Commands\InstallMakeCommand::class
     ],
+    'reference_types' => [
+    ],
 ];
