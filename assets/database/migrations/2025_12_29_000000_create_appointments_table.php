@@ -29,9 +29,9 @@ return new class extends Migration
             Schema::create($table_name, function (Blueprint $table) {
                 $table->ulid('id')->primary();
                 $table->string('name', 255)->nullable();
-                $table->date('status')->nullable();
-                $table->date('scheduled_at')->nullable();
-                $table->date('checked_in_at')->nullable();
+                $table->string('status')->nullable();
+                $table->string('scheduled_at')->nullable();
+                $table->timestamp('checked_in_at')->nullable();
                 $table->string('reference_type', 50)->nullable();
                 $table->string('reference_id', 36)->nullable();
                 $table->json('props')->nullable();

@@ -40,7 +40,10 @@ class Appointment extends BaseModuleAppointment implements ContractsAppointment
         $add = [
             'name' => $appointment_dto->name,
             'reference_type' => $appointment_dto->reference_type,
-            'reference_id' => $appointment_dto->reference_id
+            'reference_id' => $appointment_dto->reference_id,
+            'status' => $appointment_dto->status,
+            'scheduled_at' => $appointment_dto->scheduled_at,
+            'checked_in_at' => $appointment_dto->checked_in_at
         ];
         if (isset($appointment_dto->id)){
             $guard  = ['id' => $appointment_dto->id];

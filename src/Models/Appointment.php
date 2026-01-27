@@ -23,6 +23,9 @@ class Appointment extends BaseModel
         'name',
         'reference_type',
         'reference_id',
+        'status',
+        'scheduled_at',
+        'checked_in_at',
         'props',
     ];
 

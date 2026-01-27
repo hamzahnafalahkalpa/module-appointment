@@ -22,6 +22,10 @@ class ViewAppointment extends ApiResource
         'reference'      => $this->relationValidation('reference', function () {
             return $this->reference->toViewApi()->resolve();
         }, $this->prop_reference),
+        "status"     => $this->status,
+        "note"     => $this->note,
+        "scheduled_at"     => $this->scheduled_at,
+        "checked_in_at"     => $this->checked_in_at,
         "created_at"     => $this->created_at,
         "updated_at"     => $this->updated_at
     ];

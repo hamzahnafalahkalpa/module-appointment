@@ -30,6 +30,18 @@ class AppointmentData extends Data implements DataAppointmentData
     #[MapName('reference')]
     public ?array $reference = null;
 
+    #[MapInputName('scheduled_at')]
+    #[MapName('scheduled_at')]
+    public ?string $scheduled_at = null;
+
+    #[MapInputName('checked_in_at')]
+    #[MapName('checked_in_at')]
+    public ?string $checked_in_at = null;
+
+    #[MapInputName('status')]
+    #[MapName('status')]
+    public ?string $status = null;
+
     #[MapInputName('queue_transaction')]
     #[MapName('queue_transaction')]
     public ?QueueTransactionData $queue_transaction = null;
